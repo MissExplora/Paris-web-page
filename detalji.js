@@ -11,22 +11,6 @@ function provjeriStatus(){
 	}
 }
 
-function loadXMLDoc(url,fc){
-    if (window.XMLHttpRequest){
-        req = new XMLHttpRequest();
-    } else if (window.ActiveXObject){
-        req = new ActiveXObject("Microsoft.XMLHTTP");
-    }
-    if (req){
-        req.onloadend = function (){  document.getElementById('detaljici').innerHTML = req["response"]; 
-		document.getElementById('tablicica').style["top"] = "-500px";}
-        req.open("GET", url, true);
-        req.send();
-        return req;
-    }
-}
-
-
 
 function promijeniBoju(red){
 	red.style.backgroundColor = "#FAAC58";
@@ -76,17 +60,17 @@ function loadXMLDoc(url){
                 slika.style["display"] = "None";
                 detalji.style["display"]="inline";
                 var koordinate = eval(document.getElementById("skriveni").textContent);
+				var naziv = eval(document.getElementById("naziv").textContent);
+				var web = eval(document.getElementById("web").textContent);
+				var adresa = eval(document.getElementById("adresa").textContent);
 		
-                console.log(koordinate);
-				
-				
 				window.map = L.map('karta').setView(koordinate, 13);
 				
 				L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
 					attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by- sa/2.0/"> CC-BY-SA</a>'
 				}).addTo(map);
 				var popup = L.popup();
-				popup.setLatLng(koordinate).setContent("Naziv, koordinate i sajt!").openOn(map);
+				popup.setLatLng(koordinate).setContent('<p>'+naziv+'<br>'+koordinate+'<br>'+adresa+'<br>'+web+'</p>').openOn(map);
 				
 
                 //mapa.style["display"] = "inherit";

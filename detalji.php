@@ -14,8 +14,11 @@ $ulica = $podaci->getElementsByTagName("adresa")->item(0)->getElementsByTagName(
 $xml = new SimpleXMLElement(file_get_contents("http://nominatim.openstreetmap.org/search?q=" . urlencode($ulica) . "&format=xml")); 
 $lon = $xml->children()[0]['lon'];
 $lat = $xml->children()[0]['lat'];
+$naziv = $podaci->getElementsByTagName("naziv")->item(0)->textContent;
+$web = $podaci->getElementsByTagName("web")->item(0)->textContent;
+$adresa = $podaci->getElementsByTagName("adresa")->item(0)->getElementsByTagName("ulica")->item(0)->textContent;
 
-//sleep(3);
+sleep(1);
 
 
 echo "
@@ -30,6 +33,9 @@ echo "
 			Sati: " . $radno_vrijeme . " <br>
 	</p>
 	<div id='skriveni' style='display:none'> [" . $lat . ", " . $lon . "]</div>
+	<div id='naziv' style='display:none'>" . $naziv . "</div>
+	<div id='web' style='display:none'>" . $web . "</div>
+	<div id='adresa' style='display:none'>" . $adresa . "</div>
 		
 	";
 ?>

@@ -6,8 +6,8 @@
     <title>Vodič kroz Pariz</title>
     <link rel="stylesheet" type="text/css" href="dizajn.css">
 	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css">
-	<script type="text/javascript" src="detalji.js"></script>
 	<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+	<script type="text/javascript" src="detalji.js"></script>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="keywords" content="Pariz, Vodič">
     <meta name="description" content="Vodič kroz Pariz i njegove znamenitosti">
