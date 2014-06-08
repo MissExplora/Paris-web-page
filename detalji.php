@@ -17,6 +17,8 @@ $lat = $xml->children()[0]['lat'];
 $naziv = $podaci->getElementsByTagName("naziv")->item(0)->textContent;
 $web = $podaci->getElementsByTagName("web")->item(0)->textContent;
 $adresa = $podaci->getElementsByTagName("adresa")->item(0)->getElementsByTagName("ulica")->item(0)->textContent;
+if ($telefon == NULL) $telefon = "Nema podataka";
+if ($web == NULL) $web = "Nema podataka";
 
 sleep(1);
 

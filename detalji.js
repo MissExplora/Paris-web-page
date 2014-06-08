@@ -60,9 +60,9 @@ function loadXMLDoc(url){
                 slika.style["display"] = "None";
                 detalji.style["display"]="inline";
                 var koordinate = eval(document.getElementById("skriveni").textContent);
-				var naziv = eval(document.getElementById("naziv").textContent);
-				var web = eval(document.getElementById("web").textContent);
-				var adresa = eval(document.getElementById("adresa").textContent);
+				var naziv = document.getElementById("naziv").textContent;
+				var web = document.getElementById("web").textContent;
+				var adresa = document.getElementById("adresa").textContent;
 		
 				window.map = L.map('karta').setView(koordinate, 13);
 				
