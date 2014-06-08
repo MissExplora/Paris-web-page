@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE vodic SYSTEM "gramatika.dtd">
+<?xml-stylesheet type="text/xsl" href="pretvorba.xsl"?>
+
+<vodic>
+<znamenitost bla="z1" tip_znamenitosti="Atrakcija" cijena_ulaznice="0-10" fid="469902999735698">
+	<naziv>Eiffelov toranj</naziv>
+	<adresa>
+		<ulica arrondissement="7e">Eiffel Tower, Paris, France</ulica>
+	</adresa>
+	<telefon>+33 892 70 12 39</telefon>
+	<web>http://www.tour-eiffel.com</web>
+	<radno_vrijeme dani="Pon-Ned">
+		<vrijeme>9:30-23:00</vrijeme>
+	</radno_vrijeme>
+	<pristup vrsta="Metro">
+		<linija>6</linija>
+		<stanica>Bir-Hakeim</stanica>
+	</pristup>
+	<pristup vrsta="RER">
+		<linija>C</linija>
+		<stanica>Champ de Mars-Eiffel Tower</stanica>
+	</pristup>
+	<pristup vrsta="Bus">
+		<linija>42</linija>
+		<stanica>Eiffel Tower</stanica>
+	</pristup>
+</znamenitost>
+
+
+<znamenitost bla="z2" tip_znamenitosti="Muzej" cijena_ulaznice="10-20" fid="23680604925">
+	<naziv>Louvre</naziv>
+	<adresa>
+		<ulica arrondissement="1e">Musee du Louvre, Paris, France</ulica>
+	</adresa>
+	<telefon>+33 1 40 20 53 17</telefon>
+	<web>http://www.louvre.fr</web>
+	<radno_vrijeme dani="Pon-Ned">
+		<vrijeme>9:00-18:00</vrijeme>
+	</radno_vrijeme>
+	<pristup vrsta="Metro">
+		<linija>1</linija>
+		<stanica>Louvre-Rivioli</stanica>
+	</pristup>
+	<pristup vrsta="Bus">
+		<linija>21</linija>
+		<stanica>Louvre</stanica>
+	</pristup>
+</znamenitost>
+
+
+<znamenitost bla="z3" tip_znamenitosti="Atrakcija" cijena_ulaznice="0-10" fid="100572883398118">
+	<naziv>Notre Dame</naziv>
+	<adresa>
+		<ulica arrondissement="4e">Parvis Notre-Dame , Paris, France</ulica>
+	</adresa>
+	<telefon>+33 1 42 34 56 10</telefon>
+	<web>http://www.notredamedeparis.fr</web>
+	<radno_vrijeme dani="Pon-Ned">
+		<vrijeme>7:45-18:45</vrijeme>
+	</radno_vrijeme>
+	<pristup vrsta="Metro">
+		<linija>4</linija>
+		<stanica>Cite</stanica>
+	</pristup>
+	<pristup vrsta="RER">
+		<linija>B</linija>
+		<stanica>Notre-Dame</stanica>
+	</pristup>
+	<pristup vrsta="Bus">
+		<linija>47</linija>
+		<stanica>Cite</stanica>
+	</pristup>
+</znamenitost>
+
+
+<znamenitost bla="z4" tip_znamenitosti="Park" cijena_ulaznice="0-10" fid="154704924551856">
+	<naziv>Luksemburški park</naziv>
+	<adresa>
+		<ulica arrondissement="6e">Palais du luxembourg, Paris, France</ulica>
+	</adresa>
+	<radno_vrijeme dani="Pon-Ned">
+		<vrijeme>0:00-24:00</vrijeme>
+	</radno_vrijeme>
+	<pristup vrsta="RER">
+		<linija>B</linija>
+		<stanica>Luxembourg</stanica>
+	</pristup>
+</znamenitost>
+
+
+<znamenitost bla="z5" tip_znamenitosti="Muzej" cijena_ulaznice="10-20" fid="43375083673">
+	<naziv>Dvorac Versailles</naziv>
+	<adresa>
+		<ulica>Château de Versailles, Versailles</ulica>
+	</adresa>
+	<telefon>+33 1 30 83 78 00</telefon>
+	<web>http://www.chateauversailles.fr/</web>
+	<radno_vrijeme dani="Uto-Ned">
+		<vrijeme>09:00-18:30</vrijeme>
+	</radno_vrijeme>
+	<pristup vrsta="RER">
+		<linija>C</linija>
+		<stanica>Versailles</stanica>
+	</pristup>
+</znamenitost>
+</vodic>

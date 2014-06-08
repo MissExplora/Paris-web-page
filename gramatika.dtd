@@ -1,0 +1,26 @@
+<!ELEMENT vodic (znamenitost+)>
+
+<!ELEMENT znamenitost (naziv, adresa, telefon?, web?, radno_vrijeme, pristup+)>
+<!ATTLIST znamenitost id ID #REQUIRED>
+<!ATTLIST znamenitost tip_znamenitosti (Atrakcija|Muzej|Park) #REQUIRED>
+<!ATTLIST znamenitost cijena_ulaznice (0-10|10-20) #REQUIRED>
+<!ATTLIST znamenitost fid CDATA #REQUIRED>
+
+<!ELEMENT naziv (#PCDATA)>
+
+<!ELEMENT adresa (ulica)>
+<!ELEMENT ulica (#PCDATA)>
+<!ATTLIST ulica arrondissement CDATA #IMPLIED>
+
+<!ELEMENT telefon (#PCDATA)>
+
+<!ELEMENT web (#PCDATA)>
+
+<!ELEMENT radno_vrijeme (vrijeme)>
+<!ATTLIST radno_vrijeme dani (Pon-Ned|Uto-Ned) #REQUIRED>
+<!ELEMENT vrijeme (#PCDATA)>
+
+<!ELEMENT pristup (linija, stanica)>
+<!ATTLIST pristup vrsta (Metro|RER|Bus) #REQUIRED>
+<!ELEMENT linija (#PCDATA)>
+<!ELEMENT stanica (#PCDATA)>

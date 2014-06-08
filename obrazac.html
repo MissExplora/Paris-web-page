@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<head>
+    <title>Vodič kroz Pariz</title>
+    <link rel="stylesheet" type="text/css" href="dizajn.css">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="Pariz, Vodič">
+    <meta name="description" content="Vodič kroz Pariz i njegove znamenitosti">
+    <meta name="author" content="Dora Budić">
+</head>
+
+<body>
+    <div id="zaglavlje">
+        <h1 class="naslovniTekst">Vodič kroz Pariz</h1>
+        <a href="index.html">
+            <img src="parisss.jpg" alt="Slika Eiffelovog tornja" class="naslovnaSlika">
+        </a>
+    </div>
+    
+    <div id="navigacija">
+        <ul class="listaNavigacija">
+            <li><br></li>
+            <li><a href="index.html">Početna stranica</a></li>
+            <li><a href="obrazac.html">Pretraživanje</a></li>
+            <li><a href="http://www.fer.hr/predmet/or">Otvoreno računarstvo</a></li>
+            <!-- <li><a href="http://www.fer.unizg.hr" target="_blank">FER</a></li> -->
+            <li><a href="http://www.fer.unizg.hr" onclick="window.open(this.href,'_blank');return false;">FER</a></li>
+            <li><a href="podaci.xml">XML datoteka</a></li>
+            <li><a href="mailto:dora.budic@fer.hr">Kontaktiraj autora</a></li>
+        </ul>
+    </div>
+    
+    <div id="tijelo">
+        <h2>Obrazac za pretraživanje znamenitosti</h2>
+        <form action="pretraga.php" method="get">
+            <table summary="">
+                <tr>
+                    <td>Naziv</td>
+                    <td><input type="text" name="naziv"></td>
+                </tr>
+                <tr>
+                    <td>Ulica</td>
+                    <td><input type="text" name="ulica"></td>
+                </tr>
+                <tr>
+                    <td>Arrondissement</td>
+                    <td><input type="text" name="arrondissement"></td>
+                </tr>
+                <tr>
+                    <td>Telefon</td>
+                    <td><input type="text" name="telefon"></td>
+                </tr>
+                <tr>
+                    <td>Web stranica</td>
+                    <td><input type="text" name="web"></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Radno vrijeme</td>
+                    <td>Dan
+                        <select name="dan">
+                            <option > </option>
+                            <option value="Pon-Ned">Pon-Ned</option>
+                            <option value="Uto-Ned">Uto-Ned</option>
+                        </select>
+                    </td>   
+                </tr>
+                <tr>
+                    <td>Vrijeme
+                        <select name='vrijeme[]' multiple size="5">
+                            <option  value="0:00-24:00">0:00-24:00</option>
+                            <option  value="7:45-18:45">7:45-18:45</option>
+                            <option  value="9:00-18:00">9:00-18:00</option>
+                            <option  value="09:00-18:30">09:00-18:30</option>
+                            <option  value="9:30-23:00">9:30-23:00</option>   
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tip znamenitosti</td>
+                    <td>
+                        <input type="radio" name="tip_znamenitosti" value="atrakcija">Atrakcija
+                        <input type="radio" name="tip_znamenitosti" value="muzej">Muzej
+                        <input type="radio" name="tip_znamenitosti" value="park">Park
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cijena ulaznice (u eurima)</td>
+                    <td>
+                        <select name="cijena" size="2">
+                            <option value="0-10">0-10</option>
+                            <option value="10-20">10-20</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Vrsta pristupa</td>
+                    <td>
+                        <input type="checkbox" name="pristup[]" value="Bus">Bus
+                        <input type="checkbox" name="pristup[]" value="Metro">Metro
+                        <input type="checkbox" name="pristup[]" value="RER">RER
+                    </td>
+                </tr>
+                <tr>
+                    <td>Linija</td>
+                    <td><input type="text" name="linija"></td>
+                </tr>
+                <tr>
+                    <td>Stanica</td>
+                    <td><input type="text" name="stanica"></td>
+                </tr>
+                <tr class="gumbici">
+                    <td colspan="2" ><input type="submit" value="Pretraži">
+                    <input type="reset" value="Poništi"></td>
+                </tr>
+            </table>
+        </form>
+        
+    </div>
+    
+    <div id="podnozje">
+        <p>Autor stranice: Dora Budić, FER
+            <a href="http://validator.w3.org/check?uri=referer"><img
+              src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01 Strict" height="31" width="88"></a>
+        </p>
+    </div>
+    
+</body>
+
+
+</html>
