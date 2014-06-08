@@ -70,7 +70,7 @@ function loadXMLDoc(url){
 					attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by- sa/2.0/"> CC-BY-SA</a>'
 				}).addTo(map);
 				var popup = L.popup();
-				popup.setLatLng(koordinate).setContent('<p>'+naziv+'<br>'+koordinate+'<br>'+adresa+'<br>'+web+'</p>').openOn(map);
+				popup.setLatLng(koordinate).setContent('<p>'+naziv+'<br>'+koordinate+'<br>'+adresa+'<br><a href='+web+'>'+web+'</a></p>').openOn(map);
 				
 
                 //mapa.style["display"] = "inherit";
